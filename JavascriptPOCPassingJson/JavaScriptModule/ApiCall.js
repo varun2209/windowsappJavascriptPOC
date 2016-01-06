@@ -5,4 +5,4 @@
     return xmlHttp.responseText;
 }
 
-httpGet("https://google.co.in");
+//httpGet("https://google.co.in");

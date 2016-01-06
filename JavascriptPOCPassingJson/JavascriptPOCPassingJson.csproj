@@ -98,10 +98,54 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ChakraHost.cs" />
+    <Compile Include="CoreTools.cs" />
+    <Compile Include="Exceptions\JavaScriptEngineException.cs" />
+    <Compile Include="Exceptions\JavaScriptFatalException.cs" />
+    <Compile Include="Exceptions\JavaScriptScriptException.cs" />
+    <Compile Include="Exceptions\JavaScriptUsageException.cs" />
+    <Compile Include="Injections\Console.cs" />
+    <Compile Include="Injections\Functions\CommunicationManager.cs" />
+    <Compile Include="Injections\Functions\SetTimeout.cs" />
+    <Compile Include="Injections\HTML\CanvasRenderingContext2D.cs" />
+    <Compile Include="Injections\HTML\CSSStyleDeclaration.cs" />
+    <Compile Include="Injections\HTML\Document.cs" />
+    <Compile Include="Injections\HTML\DrawingState.cs" />
+    <Compile Include="Injections\HTML\Element.cs" />
+    <Compile Include="Injections\HTML\EventTarget.cs" />
+    <Compile Include="Injections\HTML\HTMLBodyElement.cs" />
+    <Compile Include="Injections\HTML\HTMLCanvasElement.cs" />
+    <Compile Include="Injections\HTML\HTMLCanvasElementWrapper.cs" />
+    <Compile Include="Injections\HTML\HTMLElement.cs" />
+    <Compile Include="Injections\HTML\ICanvasRenderingContext2D.cs" />
+    <Compile Include="Injections\HTML\ICSSStyleDeclaration.cs" />
+    <Compile Include="Injections\HTML\IDocument.cs" />
+    <Compile Include="Injections\HTML\IElement.cs" />
+    <Compile Include="Injections\HTML\IEventTarget.cs" />
+    <Compile Include="Injections\HTML\IHTMLBodyElement.cs" />
+    <Compile Include="Injections\HTML\IHTMLCanvasElement.cs" />
+    <Compile Include="Injections\HTML\IHTMLElement.cs" />
+    <Compile Include="Injections\HTML\IImageData.cs" />
+    <Compile Include="Injections\HTML\ILocation.cs" />
+    <Compile Include="Injections\HTML\ImageData.cs" />
+    <Compile Include="Injections\HTML\INavigator.cs" />
+    <Compile Include="Injections\HTML\INode.cs" />
+    <Compile Include="Injections\HTML\IWindow.cs" />
+    <Compile Include="Injections\HTML\Location.cs" />
+    <Compile Include="Injections\HTML\Navigator.cs" />
+    <Compile Include="Injections\HTML\Node.cs" />
+    <Compile Include="Injections\HTML\Window.cs" />
+    <Compile Include="Injections\XMLHttpRequest.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Native.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wrappers\JavaScriptEnum.cs" />
+    <Compile Include="Wrappers\JavaScriptException.cs" />
+    <Compile Include="Wrappers\JavaScriptPropertyId.cs" />
+    <Compile Include="Wrappers\JavaScriptTypedef.cs" />
+    <Compile Include="Wrappers\JavaScriptValue.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -132,9 +176,13 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="ChakraBridge">
-      <HintPath>..\..\..\..\..\..\..\repositories\ChakraJavaScriptBridge\JsBridge\dist\ChakraBridge.winmd</HintPath>
-    </Reference>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RuntimeComponent1\RuntimeComponent1.csproj">
+      <Project>{3093e5e0-3cdc-4927-83db-471844a783e6}</Project>
+      <Name>RuntimeComponent1</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

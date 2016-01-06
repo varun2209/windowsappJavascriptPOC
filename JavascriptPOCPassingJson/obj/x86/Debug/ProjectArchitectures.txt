@@ -1,1 +1,2 @@
 C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\JavascriptPOCPassingJson.csproj;x86
+C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\RuntimeComponent1.csproj;x86

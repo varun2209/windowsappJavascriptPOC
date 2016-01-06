@@ -1,10 +1,9 @@
 ﻿function ParseJson() {
-    var text = '{"employees":[' +
-'{"firstName":"John","lastName":"Doe" },' +
-'{"firstName":"Anna","lastName":"Smith" },' +
-'{"firstName":"Peter","lastName":"Jones" }]}';
-    obj = JSON.parse(text);
-    sendToHost(JSON.stringify(obj), "RootObject");
+    var tempEmployee = new RuntimeComponent1.Employee();
+    tempEmployee.firstName = "Varun";
+    tempEmployee.lastName = "Sharma";
+    return JSON.constructor(tempEmployee);
+    //sendToHost(JSON.stringify(tempEmployee), "Employee");
 }
 
 ParseJson();
