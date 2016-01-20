@@ -21,43 +21,51 @@ namespace JavascriptPOCPassingJson
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     /// 
-    
+
     public sealed partial class MainPage : Page
     {
         ChakraHost host = new ChakraHost();
-     
+        DateTime startTime = new DateTime();
+        UInt16 executionCount;
+        //UInt16 totalTimeElapsed = 0;
+        //UInt16 currentDifference = 0;
+        //string text = null;
+
         public MainPage()
         {
             this.InitializeComponent();
             host.ProjectNamespace("RuntimeComponent1");
-            //CommunicationManager.RegisterType(typeof(RuntimeComponent1.Employee));
+            //host.ProjectObjectToGlobal(RuntimeComponent1.Employee.Create(), "EmployeeObject");  
+            //Class type to be returned is to be registered with communication manager
+            CommunicationManager.RegisterType(typeof(RuntimeComponent1.Employee));
         }
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-
             Console.OnLog += Console_OnLog;
-
-            makeHttpCalls();
-
-            try {
-                host.ProjectNamespace("ModelClassLibraries");
-            }
-            catch(Exception exception)
-            {
-                System.Diagnostics.Debug.WriteLine(exception);
-            }
-            EmployeeList RootObj = new EmployeeList();
+            //makeHttpCalls();
+            //EmployeeList RootObj = new EmployeeList();
 
             CommunicationManager.OnObjectReceived = (data) =>
             {
-                RuntimeComponent1.Employee empObj = (RuntimeComponent1.Employee)data;
-                System.Diagnostics.Debug.WriteLine(empObj);
+                RuntimeComponent1.Employee employeeData = (RuntimeComponent1.Employee)data;
+                //currentDifference = (UInt16)Convert.ToInt16(DateTime.Now.Subtract(startTime).Milliseconds);
+                //System.Diagnostics.Debug.WriteLine("End Time Difference-------------------------------" + currentDifference);
+                //if (executionCount > 0)
+                //{
+                //    totalTimeElapsed = (UInt16)(totalTimeElapsed + currentDifference);
+                //    System.Diagnostics.Debug.WriteLine("End Time Difference average-------------------------------" + totalTimeElapsed / executionCount);
+                //}
             };
-
+            //await System.Threading.Tasks.Task.Run(() =>
+            //{
+            //    text = File.ReadAllText("ResponseFiles/JSonResponse.txt");
+            //});
             var script = await CoreTools.GetPackagedFileContentAsync("JavaScriptModule", "JsonParser.js");
             var result = host.RunScript(script);
-
+            //startTime = DateTime.Now;
+            //System.Diagnostics.Debug.WriteLine("Start Time -------------------------------" + DateTime.Now);
+            //host.CallFunction("ParseJson", text);
         }
 
         private async void makeHttpCalls()
@@ -81,18 +89,41 @@ namespace JavascriptPOCPassingJson
 
         private void Console_OnLog(object sender, string e)
         {
-            System.Diagnostics.Debug.WriteLine(e+" -------------------- ");
+            System.Diagnostics.Debug.WriteLine(e + " -------------------- ");
         }
 
-        private async void ExecuteScript_Click(object sender, RoutedEventArgs e)
+        private void ExecuteScript_Click(object sender, RoutedEventArgs e)
         {
-            EmployeeList rootObj = new EmployeeList();
-            var script = await CoreTools.GetPackagedFileContentAsync("JavaScriptModule", "JsonParser.js");
-            var output = host.RunScript(script);
+            //EmployeeList rootObj = new EmployeeList();
+            //var script = await CoreTools.GetPackagedFileContentAsync("JavaScriptModule", "JsonParser.js");
+            //var output = host.RunScript(script);
+            startTime = DateTime.Now;
+            System.Diagnostics.Debug.WriteLine("Start Time -------------------------------" + DateTime.Now);
+            executionCount++;
+            int optionSelected = 0;
+            optionSelected = Convert.ToInt16(ChoiceInput.Text);
+            //Execute case 2,3 with debug application process set as SCRIPT in the project properties
+            switch (optionSelected)
+            {
+                //Execute case 4 with debug application process set as MANAGED in project properties
+                case 1:
+                    host.CallFunction("ParseJsonAndSendObject", "Dummy");
+                    break;
+                case 2:
+                    host.CallFunction("CallNativeMethodFromJs");
+                    break;
+                case 3:
+                    host.CallFunction("CallNativeStaticMethodFromJs");
+                    break;
+                case 4:
+                    //Execute case 4 with debug application process set as MANAGED in project properties
+                    host.CallFunction("ParseJsonAndSendObjectUsingJSGlobalObjectMethod", "Dummy");
+                    break;
+            }
         }
     }
-    public sealed class EmployeeList
-    {
-        public List<RuntimeComponent1.Employee> employees { get; set; }
-    }
+    //public sealed class EmployeeList
+    //{
+    //    public List<RuntimeComponent1.Employee> employees { get; set; }
+    //}
 }

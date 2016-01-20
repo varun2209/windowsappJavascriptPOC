@@ -26,9 +26,15 @@ namespace ChakraBridge
             // sendToHost signature is (json, type)
             JavaScriptValue jsonValue = arguments[1];
             string json = jsonValue.ConvertToString().ToString();
-
+            object result = jsonValue.ConvertToObject();
             JavaScriptValue typeValue = arguments[2];
             string typename = typeValue.ConvertToString().ToString();
+
+            JavaScriptValue globalObject;
+            Native.JsGetGlobalObject(out globalObject);
+            JavaScriptPropertyId functionId = JavaScriptPropertyId.FromString("EmployeeObject");
+            var resultObj = globalObject.GetProperty(functionId);
+
 
             if (!RegisteredTypes.ContainsKey(typename))
             {

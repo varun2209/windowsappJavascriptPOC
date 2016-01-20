@@ -129,19 +129,13 @@ btoa = window.btoa;");
             JavaScriptValue stringResult;
             UIntPtr stringLength;
             RuntimeComponent1.Employee tempEmp = new RuntimeComponent1.Employee();
-            
-            if(Native.JsConvertValueToObject(result,out stringResult)!= JavaScriptErrorCode.NoError)
-            {
-                throw new Exception("failed to convert to object");
-            }
-
+        
             if (Native.JsConvertValueToString(result, out stringResult) != JavaScriptErrorCode.NoError)
                 throw new Exception("failed to convert value to string.");
             if (Native.JsStringToPointer(stringResult, out returnValue, out stringLength) !=
                 JavaScriptErrorCode.NoError)
                 throw new Exception("failed to convert return value.");
             return Marshal.PtrToStringUni(returnValue);
-
         }
 
         public string ProjectObjectToGlobal(object objectToProject, string name)

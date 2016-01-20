@@ -8,7 +8,14 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:ConnectionId='1' Name="ExecuteScript" Content="Execute Script"                            ></Button>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0">
+            <TextBlock Text="Enter 1 in the text box to return object from JS to C#" Margin="0,10" TextWrapping="Wrap"></TextBlock>
+            <TextBlock Text="Enter 2 to call calss method using object and return result from JS to C#" TextWrapping="Wrap" Margin="0,10"></TextBlock>
+            <TextBlock Text="Enter 3 in the text box to call static method of class and return result from JS to C#" TextWrapping="Wrap" Margin="0,10"></TextBlock>
+            <TextBlock Text="Enter 4 in the text box to return object from JS to C# using Global JS sendtohostmethod" TextWrapping="Wrap" Margin="0,10"></TextBlock>
+            <TextBox x:ConnectionId='1' Margin="0,10" x:Name="ChoiceInput"></TextBox>
+            <Button x:ConnectionId='2' Name="ExecuteScript" Content="Execute Script"                             Margin="0,10"></Button>
+        </StackPanel>
     </Grid>
 </Page>
 

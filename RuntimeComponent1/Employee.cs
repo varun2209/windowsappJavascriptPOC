@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 
 namespace RuntimeComponent1
 {
@@ -10,7 +11,7 @@ namespace RuntimeComponent1
     {
         public string firstName { get; set; }
         public string lastName { get; set; }
-
+        
         public Employee()
         {
             firstName = "Varun";
@@ -21,5 +22,16 @@ namespace RuntimeComponent1
         {
             return this.firstName + " " + this.lastName;
         }
+
+        public static string SayHello()
+        {
+            return "Hello there";
+        }
+
+        //public static object Create()
+        //{
+        //    object newEmployee = new Employee();
+        //    return newEmployee;
+        //}
     }
 }
