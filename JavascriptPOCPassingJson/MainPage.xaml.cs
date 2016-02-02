@@ -29,7 +29,7 @@ namespace JavascriptPOCPassingJson
         UInt16 executionCount;
         //UInt16 totalTimeElapsed = 0;
         //UInt16 currentDifference = 0;
-        //string text = null;
+        string text = null;
 
         public MainPage()
         {
@@ -46,6 +46,11 @@ namespace JavascriptPOCPassingJson
             //makeHttpCalls();
             //EmployeeList RootObj = new EmployeeList();
 
+            //RuntimeComponent1.Employee.MyEvent += (object sender) =>
+            //{
+            //    var eventData = ((RuntimeComponent1.Employee)sender);
+            //};
+
             CommunicationManager.OnObjectReceived = (data) =>
             {
                 RuntimeComponent1.Employee employeeData = (RuntimeComponent1.Employee)data;
@@ -57,10 +62,10 @@ namespace JavascriptPOCPassingJson
                 //    System.Diagnostics.Debug.WriteLine("End Time Difference average-------------------------------" + totalTimeElapsed / executionCount);
                 //}
             };
-            //await System.Threading.Tasks.Task.Run(() =>
-            //{
-            //    text = File.ReadAllText("ResponseFiles/JSonResponse.txt");
-            //});
+            await System.Threading.Tasks.Task.Run(() =>
+            {
+                text = File.ReadAllText("ResponseFiles/JSonResponse.txt");
+            });
             var script = await CoreTools.GetPackagedFileContentAsync("JavaScriptModule", "JsonParser.js");
             var result = host.RunScript(script);
             //startTime = DateTime.Now;
@@ -102,15 +107,18 @@ namespace JavascriptPOCPassingJson
             executionCount++;
             int optionSelected = 0;
             optionSelected = Convert.ToInt16(ChoiceInput.Text);
+            RuntimeComponent1.Employee funtionResult;
             //Execute case 2,3 with debug application process set as SCRIPT in the project properties
             switch (optionSelected)
             {
-                //Execute case 4 with debug application process set as MANAGED in project properties
+                //Execute case 1 with debug application process set as MANAGED in project properties
                 case 1:
                     host.CallFunction("ParseJsonAndSendObject", "Dummy");
                     break;
                 case 2:
                     host.CallFunction("CallNativeMethodFromJs");
+                    funtionResult = (RuntimeComponent1.Employee)RuntimeComponent1.CmdBridge.getResult();
+ //                   funtionResult = RuntimeComponent1.Employee.sayHello(new RuntimeComponent1.Employee());
                     break;
                 case 3:
                     host.CallFunction("CallNativeStaticMethodFromJs");
@@ -119,6 +127,9 @@ namespace JavascriptPOCPassingJson
                     //Execute case 4 with debug application process set as MANAGED in project properties
                     host.CallFunction("ParseJsonAndSendObjectUsingJSGlobalObjectMethod", "Dummy");
                     break;
+                case 5:
+                    host.CallFunction("GenericParserAuth", text);
+                    break;
             }
         }
     }
@@ -126,4 +137,5 @@ namespace JavascriptPOCPassingJson
     //{
     //    public List<RuntimeComponent1.Employee> employees { get; set; }
     //}
+
 }
