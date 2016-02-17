@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>6eac1ff2-d4d3-4cbb-a1b9-def67b4fa1a0</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>E53E15B84D5CEDB569F65F5754AD2DF13A54D6A374C4AFCEC5CD699A19C9AEDF</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>0F80D2B6B3789F1867114D5FE8A54172BB26D37425A2D508ABBA7D2DB9C82295</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>6eac1ff2-d4d3-4cbb-a1b9-def67b4fa1a0_1.0.0.0_x86__dphraywz1bycp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>6eac1ff2-d4d3-4cbb-a1b9-def67b4fa1a0_dphraywz1bycp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>6eac1ff2-d4d3-4cbb-a1b9-def67b4fa1a0</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-01-28T07:42:24.337</Modified>
+      <Modified>2016-02-17T11:51:32.608</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\bin\x86\Debug\JavascriptPOCPassingJson.exe">
       <PackagePath>entrypoint\JavascriptPOCPassingJson.exe</PackagePath>
-      <Modified>2016-01-28T07:27:55.916</Modified>
+      <Modified>2016-02-17T11:51:29.097</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\201101287\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -468,15 +468,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\bin\x86\Debug\RuntimeComponent1.winmd">
       <PackagePath>RuntimeComponent1.winmd</PackagePath>
-      <Modified>2016-01-28T07:27:52.958</Modified>
+      <Modified>2016-02-17T11:51:27.328</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2015-12-22T07:46:11.996</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\ResponseFiles\JSonResponse.txt">
-      <PackagePath>ResponseFiles\JSonResponse.txt</PackagePath>
-      <Modified>2016-01-27T11:32:39.432</Modified>
+    <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\JavaScriptModule\JsParserAndi.js">
+      <PackagePath>JavaScriptModule\JsParserAndi.js</PackagePath>
+      <Modified>2016-02-15T12:35:57.136</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\JavaScriptModule\UserLoginParser.js">
+      <PackagePath>JavaScriptModule\UserLoginParser.js</PackagePath>
+      <Modified>2016-02-02T10:49:30.034</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\JavaScriptModule\ApiCall.js">
       <PackagePath>JavaScriptModule\ApiCall.js</PackagePath>
@@ -484,7 +488,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\JavaScriptModule\JsonParser.js">
       <PackagePath>JavaScriptModule\JsonParser.js</PackagePath>
-      <Modified>2016-01-28T07:42:15.419</Modified>
+      <Modified>2016-02-16T12:07:34.037</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\ResponseFiles\JSonResponse.txt">
+      <PackagePath>ResponseFiles\JSonResponse.txt</PackagePath>
+      <Modified>2016-02-16T12:03:52.277</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -534,11 +542,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-01-28T06:17:16.077</Modified>
+      <Modified>2016-02-17T11:47:04.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\bin\x86\Debug\Core\JavascriptPOCPassingJson.exe">
       <PackagePath>JavascriptPOCPassingJson.exe</PackagePath>
-      <Modified>2016-01-28T07:42:24.331</Modified>
+      <Modified>2016-02-17T11:51:32.602</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

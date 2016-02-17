@@ -92,6 +92,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="JavaScriptModule\JsParserAndi.js" />
+    <Content Include="JavaScriptModule\UserLoginParser.js" />
     <Content Include="ResponseFiles\JSonResponse.txt" />
     <None Include="project.json" />
   </ItemGroup>

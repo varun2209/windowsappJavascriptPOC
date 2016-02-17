@@ -99,6 +99,8 @@ namespace JavascriptPOCPassingJson
 
         private void ExecuteScript_Click(object sender, RoutedEventArgs e)
         {
+            RuntimeComponent1.LoginResponseModel.GetModelEvent(new EventHandler(ModelObjectCollector));
+
             //EmployeeList rootObj = new EmployeeList();
             //var script = await CoreTools.GetPackagedFileContentAsync("JavaScriptModule", "JsonParser.js");
             //var output = host.RunScript(script);
@@ -131,6 +133,11 @@ namespace JavascriptPOCPassingJson
                     host.CallFunction("GenericParserAuth", text);
                     break;
             }
+        }
+
+        public void ModelObjectCollector(dynamic sender, EventArgs e)
+        {
+            RuntimeComponent1.LoginResponseModel tempModelObject = sender;
         }
     }
     //public sealed class EmployeeList

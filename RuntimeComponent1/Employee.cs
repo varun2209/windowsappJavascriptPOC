@@ -18,8 +18,8 @@ namespace RuntimeComponent1
 
         public Employee()
         {
-            firstName = "Varun";
-            lastName = "Sharma";
+            //firstName = "Varun";
+            //lastName = "Sharma";
             //cmdBridge = new CmdBridge();
             //MyEvent += cmdBridge.invokeFunction;
         }

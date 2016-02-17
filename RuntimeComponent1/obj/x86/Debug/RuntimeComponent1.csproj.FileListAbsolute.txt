@@ -1,10 +1,10 @@
+C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\obj\x86\Debug\RuntimeComponent1.winmd
+C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\obj\x86\Debug\RuntimeComponent1.winmdobj
+C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\obj\x86\Debug\RuntimeComponent1.compile.pdb
 C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\bin\x86\Debug\RuntimeComponent1.winmd
 C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\bin\x86\Debug\RuntimeComponent1.pdb
 C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\bin\x86\Debug\RuntimeComponent1.pri
-C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\obj\x86\Debug\RuntimeComponent1.winmd
 C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\obj\x86\Debug\RuntimeComponent1.pdb
-C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\obj\x86\Debug\RuntimeComponent1.winmdobj
-C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\obj\x86\Debug\RuntimeComponent1.compile.pdb
 C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\obj\x86\Debug\priconfig.xml
 C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\obj\x86\Debug\priconfig.xml.intermediate
 C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\obj\x86\Debug\layout.resfiles
@@ -16,4 +16,3 @@ C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJso
 C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\obj\x86\Debug\qualifiers.txt
 C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\RuntimeComponent1\obj\x86\Debug\RuntimeComponent1.csprojResolveAssemblyReference.cache

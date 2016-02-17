@@ -354,14 +354,20 @@
     <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\ResponseFiles\JSonResponse.txt">
-      <PackagePath>ResponseFiles\JSonResponse.txt</PackagePath>
+    <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\JavaScriptModule\JsParserAndi.js">
+      <PackagePath>JavaScriptModule\JsParserAndi.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\JavaScriptModule\UserLoginParser.js">
+      <PackagePath>JavaScriptModule\UserLoginParser.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\JavaScriptModule\ApiCall.js">
       <PackagePath>JavaScriptModule\ApiCall.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\JavaScriptModule\JsonParser.js">
       <PackagePath>JavaScriptModule\JsonParser.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\ResponseFiles\JSonResponse.txt">
+      <PackagePath>ResponseFiles\JSonResponse.txt</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\201101287\Documents\Visual Studio 2015\Projects\JavascriptPOCPassingJson\JavascriptPOCPassingJson\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

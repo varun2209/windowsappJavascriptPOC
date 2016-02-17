@@ -10,5 +10,7 @@ Assets\Wide310x150Logo.scale-200.png
 JavascriptPOCPassingJson.xr.xml
 JavaScriptModule\ApiCall.js
 JavaScriptModule\JsonParser.js
+JavaScriptModule\JsParserAndi.js
+JavaScriptModule\UserLoginParser.js
 Properties\Default.rd.xml
 ResponseFiles\JSonResponse.txt
